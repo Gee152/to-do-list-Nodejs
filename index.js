@@ -7,7 +7,6 @@ const conn = require("./db/conn"); //db
 
 const Tasks = require("./models/Tasks");  //importando models
 const User = require("./models/User");    //importando models
-const Tags = require("./models/Tags");    //importando models
 
 const Routes = require("./routes/Routes"); //importando routa
 
@@ -26,7 +25,7 @@ app.use(express.json()); //json
 app.use(express.static("public")); //public
 
 app.use("/tasks",Routes); //chamando rotas
-app.use("/login",Routes); //chamando rotas
+/* app.use("/login",Routes); //chamando rotas */
 
 
 conn

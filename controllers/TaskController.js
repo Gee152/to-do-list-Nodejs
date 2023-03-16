@@ -12,7 +12,9 @@ class TaskController {
       title: req.body.title,
       description: req.body.description,
       status: false,
-    };
+      nome: req.body.nome
+    };  
+
     await Task.create(task);
     res.redirect("/tasks");
   }
@@ -33,6 +35,7 @@ class TaskController {
     const task = {
       title: req.body.title,
       description: req.body.description,
+      nome: req.body.nome
     };
     await Task.update(task, { where: { id: id } });
     res.redirect("/tasks");
@@ -48,7 +51,7 @@ class TaskController {
   static async toggleTaskStatus(req, res) {
     const id = req.body.id
     const task = {
-      status: req.body.status === '0' ? true : false
+      status: req.body.status === 'true' ? false : true
     }
     await Task.update(task, {where: {id: id}})
     res.redirect("/tasks")

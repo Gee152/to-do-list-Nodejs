@@ -14,6 +14,14 @@ const Task = db.define("Task", {
   status: {
     type: DataTypes.BOOLEAN,
   },
+  nome: {
+    type: DataTypes.STRING,
+    required: true,
+  },
+  color: {
+    type: DataTypes.STRING,
+    required: true,
+  },
 });
 
 Task.belongsTo(User, {

@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
-const LoginController = require("../controllers/LoginController");
+/* const LoginController = require("../../../algo/LoginController"); */
 const TaskController = require("../controllers/TaskController");
-
+/* 
 router.get("/login", LoginController.createLogin);
-router.post("/login", LoginController.createUser);
+router.post("/login", LoginController.createUser); */
 
 /* router.get("/", LoginController.showUsers);          //rota principal   */
 

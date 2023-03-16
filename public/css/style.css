@@ -31,6 +31,12 @@
 .container {
   max-width: 450px;
   margin: 2em auto;
+
+  background-color: rgba(253, 74, 34, 0.2); 
+  border:2px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 15px;
+  padding: 1.50%; 
+  text-align:justify;
 }
 
 .container form {
@@ -65,11 +71,6 @@ form input[type='submit'] {
   cursor: pointer;
 }
 
-.task-list {
-  list-style: none;
-  margin-top: 1em;
-}
-
 .task-list li {
   padding: 0.5em;
   margin-bottom: 1em;
@@ -90,18 +91,41 @@ form input[type='submit'] {
   color: #333;
 }
 
+.task-list {
+  list-style: none;
+  margin-top: 1em;
+
+  background-color: rgba(253, 74, 34, 0.2); 
+  border:2px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 15px;
+  padding: 15px; 
+  text-align: center;
+
+}
+
+.task-list ,a{
+  text-decoration: none;
+  color: black;
+}
+
 .actions {
   display: flex;
+  border: 2px solid rgb(219, 76, 63);
+  border-radius: 60px;
+  width: 35%;
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 
 .actions i {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-right: 0.6em;
   color: #333;
+
 }
 
 .actions i:hover {
-  color: #db4c3f;
+  color: #ffffff;
 }
 
 .actions form {
@@ -116,5 +140,28 @@ form input[type='submit'] {
 
 .title.status {
   text-decoration: line-through;
-  color: red;
+  color: rgba(255, 0, 0, 0.8);
+}
+
+.teste{
+  display: inline;
+  background-color: rgba(34, 56, 253, 0.2); 
+  border:2px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 15%;
+}
+
+.footer{
+  background-color: #db4c3f; 
+  width: 100%;
+  height: 25px;
+  margin-top: 30.20%;
+}
+
+.box{
+  background-color: rgba(253, 250, 156, 0.5); 
+  border: 1px solid rgba(0, 0, 0, 0.5); 
+  border-radius: 15px;
+  padding: 5px 5px 5px; 
+  font-size: 15px;
+  text-align:justify;
 }
