@@ -1,6 +1,8 @@
 const express = require("express"); //importando express
 const exphbs = require("express-handlebars"); //importando handlebars
 
+require('dotenv').config()
+
 const app = express(); //Exec express
 
 const conn = require("./db/conn"); //db
